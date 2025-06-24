@@ -1,0 +1,158 @@
+.dash-body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+}
+
+.logo {
+  font-size: 36px;
+  font-weight: bold;
+  color: #111827;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 22px;
+  color: #374151;
+  font-weight: normal;
+}
+
+.input-wrapper {
+  position: relative; /* Important for placing button inside */
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 9999px;
+  padding: 16px 20px;
+  width: 700px;
+  min-height: 80px; /* slightly increased for space */
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.input-wrapper:focus-within {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.3);
+}
+
+textarea {
+  border: none;
+  outline: none;
+  resize: none;
+  width: 100%;
+  font-size: 16px;
+  line-height: 1.5;
+  padding: 0;
+  background: transparent;
+  color: #111827;
+  font-family: inherit;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+/* Centered button inside input */
+.get-advice-btn-center {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  width: 100px;
+  transform: translate(-50%, -50%);
+  padding: 8px 16px;
+  background-color: #22c55e;
+  color: white;
+  border: none;
+  border-radius: 9999px;
+  font-size: 14px;
+  cursor: pointer;
+  z-index: 2;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.get-advice-btn-center:hover {
+  background-color: #16a34a;
+}
+
+/* (Keep this in case you use it elsewhere) */
+.get-advice-btn {
+  margin-top: 20px;
+  padding: 10px;
+  width: 120px;
+  background-color: #22c55e;
+  color: white;
+  border: none;
+  border-radius: 9999px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.get-advice-btn:hover {
+  background-color: #16a34a;
+}
+
+/* -------- Modal Styles -------- */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modal {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  max-width: 500px;
+  width: 90%;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  text-align: left;
+  position: relative;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  border: none;
+  background: transparent;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.modal h2 {
+  margin-top: 0;
+  font-size: 22px;
+}
+
+.modal p {
+  margin-top: 10px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
