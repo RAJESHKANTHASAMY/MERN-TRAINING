@@ -1,0 +1,3 @@
+function sgfg() {
+            alert("oombu");
+        }

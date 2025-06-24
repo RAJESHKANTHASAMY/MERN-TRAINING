@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Input and Button</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #fafafa;
+        }
+
+        .box1 {
+            border: 1px solid #ccc;
+            height: 450px;
+            width: 350px;
+            padding: 20px;
+            text-align: center;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .box1 input {
+            display: block;
+            width: 90%;
+            margin: 10px auto;
+            padding: 8px;
+        }
+
+        .box1 button {
+            padding: 10px;
+            width: 95%;
+            margin: 10px auto;
+            background-color: #3897f0;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        .box1 a {
+            display: block;
+            margin-top: 10px;
+            color: #385185;
+            text-decoration: none;
+        }
+
+        .box2 {
+            border: 1px solid #ccc;
+            text-align: center;
+            height: 50px;
+            width: 350px;
+            margin-top: 10px;
+            padding-top: 15px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .box2 a {
+            text-decoration: none;
+            color: #0095f6;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <h1>Instagram</h1>
+        <input type="text" placeholder="Phone number, username or email">
+        <input type="password" placeholder="Password">
+        <button>Log in</button>
+        <h4>or</h4>
+        <a href="#">Log in with Facebook</a>
+        <a href="#">Forgot password?</a>
+    </div>
+
+    <div class="box2">
+        Don't have an account? <a href="#">Sign up</a>
+    </div>
+</body>
+</html>
